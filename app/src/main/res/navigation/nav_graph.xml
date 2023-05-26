@@ -9,7 +9,11 @@
         android:id="@+id/makanan"
         android:name="com.example.restoranlambatsaji.makanan"
         android:label="fragment_makanan"
-        tools:layout="@layout/fragment_makanan" />
+        tools:layout="@layout/fragment_makanan" >
+        <action
+            android:id="@+id/action_makanan_to_deskripsiMakanan"
+            app:destination="@id/deskripsiMakanan" />
+    </fragment>
     <fragment
         android:id="@+id/minuman"
         android:name="com.example.restoranlambatsaji.minuman"
@@ -25,4 +29,9 @@
         android:name="com.example.restoranlambatsaji.pengguna"
         android:label="fragment_pengguna"
         tools:layout="@layout/fragment_pengguna" />
+    <fragment
+        android:id="@+id/deskripsiMakanan"
+        android:name="com.example.restoranlambatsaji.DeskripsiMakanan"
+        android:label="fragment_deskripsi_makanan"
+        tools:layout="@layout/fragment_deskripsi_makanan" />
 </navigation>
