@@ -8,4 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="Merah">#a0192f</color>
+    <color name="Hijau">#4ba11a</color>
+    <color name="Biru">#0c95b6</color>
+
 </resources>

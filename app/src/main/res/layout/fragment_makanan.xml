@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="32dp"
         android:fontFamily="sans-serif-black"
         android:gravity="center"
         android:text="Makanan Lambat Saji"
@@ -21,38 +21,253 @@
         app:layout_constraintBottom_toTopOf="@+id/lin_makanan1"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+
     <LinearLayout
         android:id="@+id/lin_makanan1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/judulmakanan"
-        app:layout_constraintBottom_toTopOf="@+id/lin_makanan2">
+        app:layout_constraintBottom_toTopOf="@+id/lin_makanan2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/judulmakanan">
 
         <ImageView
             android:id="@+id/makanan1"
             android:layout_width="200dp"
             android:layout_height="120dp"
-            android:src="@drawable/tapioca_chips_3"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:src="@drawable/tapioca_chips_3" />
 
+        <LinearLayout
+            android:id="@+id/lin_deskr_makanan1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kentang Mustofa"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="Rp. 20.000"
+                android:textColor="@color/Hijau"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/lin_batal_deskr_makanan1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pesan Ini"
+                    android:textColor="@color/Merah" />
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/lin_makanan2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
         android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/lin_makanan3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lin_makanan1">
 
-        <ImageButton
+        <ImageView
             android:id="@+id/makanan2"
-            android:layout_width="126dp"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:src="@drawable/a" />
+
+        <LinearLayout
+            android:id="@+id/lin_deskr_makanan2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            tools:src="@tools:sample/avatars" />
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pecel Madiun"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="Rp. 25.000"
+                android:textColor="@color/Hijau"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/lin_batal_deskr_makanan2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pesan Ini"
+                    android:textColor="@color/Merah" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_makanan3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/lin_makanan4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lin_makanan2">
+
+        <ImageView
+            android:id="@+id/makanan3"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:src="@drawable/_2" />
+
+        <LinearLayout
+            android:id="@+id/lin_deskr_makanan3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pecel Lele"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="Rp. 23.000"
+                android:textColor="@color/Hijau"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/lin_batal_deskr_makanan3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pesan Ini"
+                    android:textColor="@color/Merah" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_makanan4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lin_makanan3">
+
+        <ImageView
+            android:id="@+id/makanan4"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:src="@drawable/r" />
+
+        <LinearLayout
+            android:id="@+id/lin_deskr_makanan4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mie Aceh"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="Rp. 24.000"
+                android:textColor="@color/Hijau"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/lin_batal_deskr_makanan4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pesan Ini"
+                    android:textColor="@color/Merah" />
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
 
 
