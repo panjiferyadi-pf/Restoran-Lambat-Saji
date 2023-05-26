@@ -1,5 +1,11 @@
 <resources>
-    <string name="app_name">Restoran Lambat Saji</string>
+
     <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="app_name">Restoran Lambat Saji</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bottom_makanan">makanan</string>
+    <string name="bottom_minuman">minuman</string>
+    <string name="bottom_pesanan">pesanan</string>
+    <string name="bottom_pengguna">pengguna</string>
 </resources>
